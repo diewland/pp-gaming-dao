@@ -3,7 +3,7 @@ from pprint import pprint as pp
  
 NAME = "PoPose Gaming DAO"
 DESC = "No utility, No roadmap. Just buy PoPose some stuff 👾"
-IMG = "ipfs://xxxxxxxxxxxxxxx/{}_{}_{}_{}.png" # XXX XXX XXX
+IMG = "ipfs://bafybeiai4mauzn5wlgyzelpvek4fl7qc7br7hwopn57ogh6tpkun3vuxym/{}_{}_{}_{}.png"
 ENGINE = "Jigsaw Engine"
 
 SRC_PATH = "./assets/*.png"
@@ -14,6 +14,7 @@ if __name__ == '__main__':
 
     # load items from asset folder
     items = [ p.split('/')[-1] for p in glob.glob(SRC_PATH) ]
+    items.remove('profile.png')
 
     # build chunk
     chunk = []
@@ -26,9 +27,9 @@ if __name__ == '__main__':
               "description": DESC,
               "image": IMG.format(keys, head, bg, qty),
               "attributes": [
-                { "trait_type": "Keys",  "value": keys },
-                { "trait_type": "Head",  "value": head },
-                { "trait_type": "Background",  "value": bg },
+                { "trait_type": "Keys",  "value": keys.capitalize() },
+                { "trait_type": "Head",  "value": head.capitalize() },
+                { "trait_type": "Background",  "value": bg.capitalize() },
               ],
               "compiler": ENGINE,
             }
