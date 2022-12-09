@@ -3,7 +3,7 @@ from pprint import pprint as pp
  
 NAME = "PoPose Gaming DAO"
 DESC = "No utility, No roadmap. Just buy PoPose some stuff 👾"
-IMG = "ipfs://bafybeigrbezjv6vwi5q6py3kzykofyoi2vc2qwgvqfrw343asv2awesbzq/{}_{}_{}_{}.png"
+IMG = "ipfs://bafybeihx5bwae7pq3l2gx4ktv5n5hir52w2yovae3nr7kbttc3skvar62a/{}_{}_{}_{}.png"
 ENGINE = "Jigsaw Engine"
 
 SRC_PATH = "./assets/*.png"
