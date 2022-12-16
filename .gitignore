@@ -1,6 +1,2 @@
 *.swp
 .DS_Store
-# push after minted out
-assets/
-json/
-revealed.zip
